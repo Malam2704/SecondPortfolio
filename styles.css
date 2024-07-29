@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #ffffff, #e0f7fa);
+    color: #333;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    z-index: 1000;
+}
+
+nav {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the top */
+    justify-content: center;
+    width: 80%;
+}
+
+.image-content {
+    flex: 1;
+    max-height: 80vh;
+    margin-right: 20px;
+    position: relative;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    max-height: 100%;
+    /* Ensure image content fits within the container */
+    object-fit: contain;
+    /* Ensure the image fits within the container without distortion */
+    display: none;
+    /* Hide all images initially */
+}
+
+.image-content img.active {
+    display: block;
+    /* Display the active image */
+}
+
+.section-content {
+    flex: 2;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.timeline h2,
+.awards h2 {
+    margin-bottom: 20px;
+}
+
+.timeline-item,
+.awards-item,
+.volunteering-item {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

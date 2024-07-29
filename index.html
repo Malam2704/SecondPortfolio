@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#" data-section="about">About Me</a></li>
+                    <li><a href="#" data-section="timeline">Timeline</a></li>
+                    <li><a href="#" data-section="awards">Awards & Volunteering</a></li>
+                    <li><a href="#" data-section="contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="image-content">
+                <img id="about-image" src="images/mebrookfield.png" alt="About Me Image">
+                <img id="timeline-image" src="images/nashville.jpg" alt="Timeline Image" class="hidden">
+                <img id="awards-image" src="images/montreal.jpg" alt="Awards Image" class="hidden">
+                <img id="contact-image" src="images/nyc.jpg" alt="Contact Image" class="hidden">
+            </div>
+            <div class="section-content">
+                <section id="about" class="section active">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Moe Alam, a passionate software engineer with extensive experience in Java, Python,
+                        HTML/CSS, SQL, JavaScript, TypeScript, C, and C++.</p>
+                    <p>I'm currently a 4th-year undergraduate student at the Rochester Institute of Technology (RIT),
+                        expecting to graduate in May 2025. I've been actively involved in on-campus organizations such
+                        as the Society of Software Engineers, Computer Science House, and Google Student Developers.</p>
+                    <p>I am actively seeking mid-level software engineering roles where I can leverage my diverse skill
+                        set and innovative problem-solving abilities. My goal is to contribute to dynamic teams and help
+                        drive impactful projects that make a difference.</p>
+                </section>
+
+                <section id="timeline" class="section">
+                    <h2>Timeline</h2>
+                    <div class="timeline-item">
+                        <h3>Software Engineer Intern at Fidelity Investments</h3>
+                        <p>June 2023 – August 2023</p>
+                        <p>Designed prototypes for a securities exchange platform and developed a full-stack trading
+                            platform.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Software Engineer Co-Op at Amplify Education</h3>
+                        <p>August 2022 – December 2022</p>
+                        <p>Updated design components, improved project functionality, and created a CI/CD React app.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Software Engineer Intern at Liberty Mutual Insurance</h3>
+                        <p>May 2022 – August 2022</p>
+                        <p>Developed REST APIs and AWS Lambda functions for Uber, and led an intern team for an internal
+                            app.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Teacher’s Assistant at Rochester Institute of Technology</h3>
+                        <p>August 2021 – May 2022</p>
+                        <p>Coached students in Python, leading to improved grades, and automated grading processes.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Data Engineer Intern at NYC Office of Technology & Innovation</h3>
+                        <p>June 2021 – August 2021</p>
+                        <p>Streamlined data aggregation with a REST API and developed a responsive Angular UI.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Music Soulmate Project</h3>
+                        <p>June 2023 – Present</p>
+                        <p>Developed a music taste-matching app using the Spotify API and React.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Wisely Project</h3>
+                        <p>May 2022 – April 2023</p>
+                        <p>Built an app for tracking financial status and implemented a responsive design using React
+                            and Spring Boot.</p>
+                    </div>
+                </section>
+
+                <section id="awards" class="section">
+                    <h2>Awards & Volunteering</h2>
+                    <div class="awards-item">
+                        <h3>Awards</h3>
+                        <p>1st place at MLH/RIT Tiger Games Hackathon 2023, 2nd place at RIT’s Datafest Hackathon 2023,
+                            2nd place in Amplify Company-wide Hackathon.</p>
+                    </div>
+                    <div class="volunteering-item">
+                        <h3>Volunteering & Leadership Experience</h3>
+                        <p>Active in Codepath.org, Microsoft Tech Resilience Program, Society of Software Engineers,
+                            Computer Science House, and Google Student Developers.</p>
+                    </div>
+                </section>
+
+                <section id="contact" class="section">
+                    <h2>Contact Me</h2>
+                    <p>If you'd like to get in touch, please email me at <a
+                            href="mailto:moeal2144@gmail.com">moeal2144@gmail.com</a>.</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/moe-alam" target="_blank">moe-alam</a></p>
+                    <p>Github: <a href="https://github.com/Malam2704" target="_blank">Malam2704</a></p>
+                    <p>Phone: 347-656-5368</p>
+                    <p>Location: New York, NY</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
